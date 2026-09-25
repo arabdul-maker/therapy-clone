@@ -56,6 +56,13 @@ export default function Home() {
             </a>
 
             <a
+              href="#office"
+              className="transition-opacity duration-200 hover:opacity-50"
+            >
+              Our Office
+            </a>
+
+            <a
               href="#faqs"
               className="transition-opacity duration-200 hover:opacity-50"
             >
@@ -113,6 +120,14 @@ export default function Home() {
                 className="rounded-xl px-4 py-3 text-base transition hover:bg-[#DCE8EA]"
               >
                 Approach
+              </a>
+
+              <a
+                href="#office"
+                onClick={closeMenu}
+                className="rounded-xl px-4 py-3 text-base transition hover:bg-[#DCE8EA]"
+              >
+                Our Office
               </a>
 
               <a
@@ -426,6 +441,83 @@ export default function Home() {
       </section>
 
       {/* =========================
+          OUR OFFICE — PART 3
+      ========================= */}
+      <section
+        id="office"
+        className="bg-[#F7F8F6] px-6 py-20 md:py-28 lg:py-32"
+      >
+        <div className="mx-auto max-w-7xl">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#C87961] md:text-sm">
+              Our Office
+            </p>
+
+            <h2 className="mt-5 text-4xl font-medium leading-[1.05] tracking-[-0.025em] md:text-5xl lg:text-6xl">
+              A calm, private space for therapy.
+            </h2>
+
+            <p className="mt-6 text-base leading-8 text-[#526170] md:text-lg">
+              My Santa Monica office is a quiet and private space designed to
+              feel calm and grounding. It offers a supportive setting where
+              you can slow down, reflect, and have room for the work of
+              therapy.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2">
+            <div className="overflow-hidden rounded-[2rem] bg-[#DCE8EA]">
+              <img
+                src="/images/maya-office-1.jpg"
+                alt="Therapy office space at Dr. Maya Reynolds' practice in Santa Monica"
+                className="h-[360px] w-full object-cover transition-transform duration-500 hover:scale-[1.02] md:h-[500px]"
+              />
+            </div>
+
+            <div className="overflow-hidden rounded-[2rem] bg-[#DCE8EA]">
+              <img
+                src="/images/maya-office-2.jpg"
+                alt="Private counseling space at Dr. Maya Reynolds' Santa Monica office"
+                className="h-[360px] w-full object-cover transition-transform duration-500 hover:scale-[1.02] md:h-[500px]"
+              />
+            </div>
+          </div>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            <div className="rounded-2xl border border-[#243447]/10 bg-[#DCE8EA] px-6 py-5">
+              <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#C87961]">
+                Location
+              </p>
+
+              <p className="mt-2 font-medium">
+                Santa Monica, California
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-[#243447]/10 bg-[#DCE8EA] px-6 py-5">
+              <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#C87961]">
+                In-Person
+              </p>
+
+              <p className="mt-2 font-medium">
+                Sessions available at the Santa Monica office
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-[#243447]/10 bg-[#DCE8EA] px-6 py-5">
+              <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#C87961]">
+                Setting
+              </p>
+
+              <p className="mt-2 font-medium">
+                Calm, private, and grounding
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================
           WHO I WORK WITH
       ========================= */}
       <section className="bg-[#F7F8F6] px-6 py-20 md:py-28 lg:py-32">
@@ -680,6 +772,13 @@ export default function Home() {
                   className="transition-opacity hover:opacity-60"
                 >
                   Approach
+                </a>
+
+                <a
+                  href="#office"
+                  className="transition-opacity hover:opacity-60"
+                >
+                  Our Office
                 </a>
 
                 <a
